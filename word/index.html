@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Online Word Editor — Open DOCX, No Login | Starling</title>
+  <meta name="description" content="Open, edit, and save Word (.docx) documents in your browser for free. No account or cloud upload. Your files stay on your device.">
+  <link rel="canonical" href="https://office.starling.build/word/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Free Online Word Editor — Open DOCX, No Login | Starling">
+  <meta property="og:description" content="Open, edit, and save Word (.docx) documents in your browser for free. No account or cloud upload. Your files stay on your device.">
+  <meta property="og:url" content="https://office.starling.build/word/">
+  <meta property="og:image" content="https://office.starling.build/assets/writer-sample.png">
+  <meta name="theme-color" content="#f7f8fa">
+  <link rel="icon" href="/assets/starling-writer.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/site.css?v=5b9903c3c6cc55aa">
+  <script id="office-config" type="application/json">{"kind": "word", "runtime": {"host": "/runtime/64a9fb4f4243957d/starling.js", "app": "/runtime/64a9fb4f4243957d/app.wasm.gz", "renderer": "/runtime/64a9fb4f4243957d/skwasm-f2bc4996fb630c7b/", "fonts": "/runtime/64a9fb4f4243957d/fonts/manifest.json"}, "apps": {"word": {"label": "Writer", "args": [], "example": "garden-brief.docx"}, "excel": {"label": "Sheets", "args": ["--sheets"], "example": "garden-budget.xlsx"}, "powerpoint": {"label": "Slides", "args": ["--slides"], "example": "garden-presentation.pptx"}}}</script>
+  <script type="module" src="/launch.js?v=5fdfb7ce3c93be0f"></script>
+</head>
+<body>
+  <div id="website">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Starling Office home"><img src="/assets/starling-writer.svg" width="30" height="30" alt="">Starling Office</a>
+      <span class="device-status"><span aria-hidden="true">●</span> Files stay on your device</span>
+      <a href="https://openoffice.starling.build/">About Starling ↗</a>
+    </header>
+    <div class="workspace">
+      <aside class="sidebar">
+        <nav aria-label="Apps"><a href="/"><span class="home-symbol" aria-hidden="true">⌂</span>All apps</a><a href="/word/" aria-current="page"><img src="/assets/starling-writer.svg" width="24" height="24" alt="">Documents</a><a href="/excel/"><img src="/assets/starling-sheets.svg" width="24" height="24" alt="">Spreadsheets</a><a href="/powerpoint/"><img src="/assets/starling-slides.svg" width="24" height="24" alt="">Presentations</a></nav>
+        <div class="sidebar-bottom"><a href="https://openoffice.starling.build/download.html">Get the desktop app ↗</a><a href="https://github.com/starling-build/starling">Source code ↗</a></div>
+      </aside>
+      <main id="main" class="workspace-main">
+        <div class="page-heading">
+          <h1>Free online Word editor</h1>
+          <p>Open, edit, and save Word (.docx) files with Starling Writer, right in your browser.</p>
+          <ul class="intro-benefits" aria-label="Using Starling Office"><li>Free &amp; open source</li><li>No account</li><li>No cloud uploads</li></ul>
+        </div>
+        <section class="open-panel" id="drop-zone" aria-labelledby="open-heading">
+          <div class="open-symbol" aria-hidden="true"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7V5h6l2 2h10v12H3z"/><path d="M3 10h18"/></svg></div>
+          <div class="open-description"><h2 id="open-heading">Open a Word file</h2><p>Choose a .docx file from your device. <span class="drop-hint">Or drag it here.</span></p></div>
+          <label class="button primary file-button">Open file<input id="starling-file" type="file" accept=".docx" aria-label="Open a Word file" disabled></label>
+          <p id="file-error" role="alert" hidden></p>
+          <noscript><p>Enable JavaScript to run the editor on your device. No file upload is needed.</p></noscript>
+        </section>
+        <section class="create-section" aria-labelledby="create-heading"><h2 id="create-heading">Create new</h2><div class="new-actions"><a class="create-card" href="/word/?start=new" data-app="word" data-start="new"><img src="/assets/starling-writer.svg" width="40" height="40" alt=""><span><strong>Blank document</strong><small>Writer · .docx</small></span><span class="plus" aria-hidden="true">+</span></a></div></section>
+        <section class="examples" aria-labelledby="examples-heading"><div class="section-heading"><h2 id="examples-heading">Try an example</h2><span>Editable sample files</span></div><div class="example-list"><a class="example-row" href="/word/?start=example" data-app="word" data-start="example"><img src="/assets/starling-writer.svg" width="28" height="28" alt=""><span><strong>Garden handbook</strong><small>Text, tables, pictures & links</small></span><span class="file-type">.docx</span><span class="example-open">Open <span aria-hidden="true">↗</span></span></a></div></section>
+        <p class="save-note">Save your changes to your device before closing the editor. No account or cloud backup.</p>
+        <details class="help"><summary>File formats, privacy &amp; help</summary><div class="faq"><details><summary>Can I edit a Word document without Microsoft Word?</summary><p>Yes. Open a .docx file, edit it in Starling Writer, and use Save to download a Word-format copy. You do not need Microsoft Word installed.</p></details><details><summary>Is it free? Do I need an account?</summary><p>The editors are free and open source. No account, subscription, or credit card is required.</p></details><details><summary>Are my documents uploaded?</summary><p>No. The browser downloads the editor and fonts. Your selected document is opened and edited locally on your device; it is not uploaded to our servers.</p></details><details><summary>Will the formatting match Microsoft Office?</summary><p>Starling supports many familiar Office features, and compatibility is improving. Complex layouts, charts, fonts, or unsupported features can still differ. Keep your original and check important documents after saving.</p></details><details><summary>Where does my edited file go?</summary><p>Use Save in the editor to download your edited file. Your browser may ask for a location or save it to Downloads. Save before closing the tab: this site does not store a cloud copy.</p></details><details><summary>Can I use the desktop apps?</summary><p>Yes. Follow the Desktop apps link at the bottom of this page for downloads and installation instructions.</p></details></div></details>
+        <footer>Free &amp; open source. No login or credit card. <a href="https://openoffice.starling.build/download.html">Desktop apps ↗</a><p>Starling is independent software, not affiliated with Microsoft. Word, Excel, and PowerPoint are Microsoft trademarks.</p></footer>
+      </main>
+    </div>
+  </div>
+  <section id="editor" aria-label="Office editor" hidden>
+    <canvas id="office-canvas" tabindex="0" aria-label="Document editing area"></canvas>
+    <div id="loading" role="status"><div><img src="/assets/starling-writer.svg" width="52" height="52" alt=""><h2>Opening your workspace</h2><p id="loading-text">Loading the editor…</p><progress id="loading-progress" aria-label="Editor loading"></progress><p>Your file stays on this device.</p><a href="/word/">Back to Office</a></div></div>
+    <div id="font-status" role="status" hidden><span></span><button type="button" hidden>Retry fonts</button></div>
+    <div id="editor-error" role="alert" hidden><h2>The editor couldn’t open.</h2><p>Your original file hasn’t been changed. Reload this page to try again.</p><a class="button primary" href="/word/">Return to Office</a></div>
+  </section>
+</body>
+</html>
